@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "No YouTube Shorts",
+  "name": "AntiShorts",
   "version": "1.0.0",
   "description": "Blocks YouTube Shorts from homepage, search, sidebar, and redirects /shorts/ URLs to regular videos.",
   "icons": {

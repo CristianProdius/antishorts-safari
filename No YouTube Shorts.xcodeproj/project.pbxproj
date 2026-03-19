@@ -454,7 +454,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "No YouTube Shorts Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "No YouTube Shorts Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "AntiShorts Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Prodius. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -489,7 +489,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "No YouTube Shorts Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "No YouTube Shorts Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "AntiShorts Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Prodius. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,7 +528,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "No YouTube Shorts/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "No YouTube Shorts";
+				INFOPLIST_KEY_CFBundleDisplayName = AntiShorts;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Prodius. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -570,7 +570,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "No YouTube Shorts/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "No YouTube Shorts";
+				INFOPLIST_KEY_CFBundleDisplayName = AntiShorts;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Prodius. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
