@@ -13,7 +13,7 @@ set -euo pipefail
 # -- Configuration (fill in once) ---------------------------------------------
 API_KEY_ID="32LF4Q3Z7N"          # App Store Connect > Users & Access > Integrations > API Keys
 API_ISSUER_ID="3c8dce31-6803-4d23-ba4f-48dab97d8d98"       # Same page, shown at top
-APP_APPLE_ID=""                   # Numeric ID from App Store Connect — set after creating the app record
+APP_APPLE_ID="6760815295"        # Numeric ID from App Store Connect app record
 BUNDLE_ID="com.prodius.No-YouTube-Shorts"
 # -----------------------------------------------------------------------------
 
