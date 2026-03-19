@@ -1,0 +1,35 @@
+/* No YouTube Shorts — CSS layer (injected at document_start) */
+
+/* Sidebar navigation */
+ytd-guide-entry-renderer:has(a[title="Shorts"]),
+ytd-mini-guide-entry-renderer:has(a[title="Shorts"]) {
+  display: none !important;
+}
+
+/* Homepage Shorts shelves */
+ytd-reel-shelf-renderer,
+ytd-rich-shelf-renderer[is-shorts],
+ytd-rich-section-renderer:has(ytd-reel-shelf-renderer) {
+  display: none !important;
+}
+
+/* Feed items with Shorts overlay */
+ytd-rich-item-renderer:has([overlay-style="SHORTS"]),
+ytd-grid-video-renderer:has([overlay-style="SHORTS"]) {
+  display: none !important;
+}
+
+/* Search results that are Shorts */
+ytd-video-renderer:has([overlay-style="SHORTS"]) {
+  display: none !important;
+}
+
+/* Shorts filter chip */
+yt-chip-cloud-chip-renderer:has(yt-formatted-string[title="Shorts"]) {
+  display: none !important;
+}
+
+/* Channel Shorts tab */
+yt-tab-shape[tab-title="Shorts"] {
+  display: none !important;
+}

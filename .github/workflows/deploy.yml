@@ -1,0 +1,23 @@
+name: Deploy to App Store
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: self-hosted
+    timeout-minutes: 30
+    env:
+      HOME: /Users/cristian
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Unlock Keychain
+        run: security unlock-keychain -p "${{ secrets.KEYCHAIN_PASSWORD }}" ~/Library/Keychains/login.keychain-db
+
+      - name: Deploy to App Store
+        run: ./scripts/deploy.sh appstore
