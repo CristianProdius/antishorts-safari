@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Shorts Blocker — Safari Extension</title>
+  <style>
+    :root { --bg: #0d0d0d; --surface: #1a1a1a; --border: #2a2a2a; --text: #e0e0e0; --muted: #888; --accent: #E53935; --accent2: #ff6659; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+    .hero {
+      text-align: center;
+      padding: 80px 24px 60px;
+      background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-icon {
+      width: 96px; height: 96px; border-radius: 20px;
+      background: var(--surface); border: 1px solid var(--border);
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 48px; margin-bottom: 24px;
+    }
+    .hero h1 { font-size: 36px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 12px; }
+    .hero p { font-size: 18px; color: var(--muted); max-width: 520px; margin: 0 auto 32px; }
+    .badge { display: inline-block; }
+    .badge img { height: 40px; }
+
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+    .features {
+      padding: 60px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .features h2 { text-align: center; font-size: 24px; margin-bottom: 40px; }
+    .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 720px; margin: 0 auto; }
+    .feature {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px;
+    }
+    .feature h3 { font-size: 16px; margin-bottom: 8px; }
+    .feature p { font-size: 14px; color: var(--muted); }
+
+    .section {
+      padding: 48px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section h2 { font-size: 22px; margin-bottom: 16px; }
+    .section p, .section li { font-size: 15px; color: var(--muted); }
+    .section ul { padding-left: 20px; }
+    .section li { margin-bottom: 8px; }
+    .section a { color: var(--accent2); text-decoration: none; }
+    .section a:hover { text-decoration: underline; }
+
+    footer {
+      padding: 40px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--text); }
+
+    .nav { display: flex; gap: 24px; justify-content: center; margin-top: 16px; }
+    .nav a { color: var(--accent2); text-decoration: none; font-size: 14px; }
+    .nav a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 28px; }
+      .feature-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-icon">S</div>
+    <h1>YouTube Shorts Blocker</h1>
+    <p>A Safari extension that removes YouTube Shorts from your browsing experience. No data collected. Runs entirely on your Mac.</p>
+    <div class="nav">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+      <a href="https://github.com/CristianProdius/antishorts-safari">GitHub</a>
+    </div>
+  </div>
+
+  <div class="features">
+    <h2>Features</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>Homepage Clean</h3>
+        <p>Removes Shorts shelves and Shorts items from your YouTube homepage feed.</p>
+      </div>
+      <div class="feature">
+        <h3>Search Filter</h3>
+        <p>Hides Shorts results from YouTube search so you only see regular videos.</p>
+      </div>
+      <div class="feature">
+        <h3>URL Redirect</h3>
+        <p>Direct /shorts/ links automatically redirect to the standard video player.</p>
+      </div>
+      <div class="feature">
+        <h3>One-Click Toggle</h3>
+        <p>Pause or resume blocking anytime from the Safari toolbar popup.</p>
+      </div>
+      <div class="feature">
+        <h3>Sidebar Cleanup</h3>
+        <p>Removes the Shorts navigation link from YouTube's sidebar menu.</p>
+      </div>
+      <div class="feature">
+        <h3>Privacy First</h3>
+        <p>No data collected, no analytics, no network requests. Everything runs locally.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <h2>How to Enable</h2>
+      <ul>
+        <li>Install the app from the Mac App Store</li>
+        <li>Open Safari &rarr; Settings &rarr; Extensions</li>
+        <li>Check the box next to "YouTube Shorts Blocker"</li>
+        <li>Grant permission for youtube.com when prompted</li>
+        <li>Visit youtube.com and enjoy a Shorts-free experience</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Prodius. All rights reserved.</p>
+    <p style="margin-top: 8px;">
+      <a href="privacy.html">Privacy Policy</a> &middot;
+      <a href="support.html">Support</a>
+    </p>
+  </footer>
+
+</body>
+</html>

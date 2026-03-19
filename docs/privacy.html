@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — YouTube Shorts Blocker</title>
+  <style>
+    :root { --bg: #0d0d0d; --surface: #1a1a1a; --border: #2a2a2a; --text: #e0e0e0; --muted: #999; --accent: #ff6659; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+    .container { max-width: 640px; margin: 0 auto; padding: 60px 24px 80px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .updated { font-size: 13px; color: var(--muted); margin-bottom: 40px; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    p { font-size: 15px; color: var(--muted); margin-bottom: 16px; }
+    ul { padding-left: 20px; margin-bottom: 16px; }
+    li { font-size: 15px; color: var(--muted); margin-bottom: 6px; }
+    .back { display: inline-block; margin-bottom: 32px; font-size: 14px; }
+    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a class="back" href="index.html">&larr; Back to home</a>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: March 19, 2026</p>
+
+    <h2>Overview</h2>
+    <p>YouTube Shorts Blocker ("the Extension") is a Safari Web Extension developed by Prodius. We are committed to protecting your privacy. This policy explains how we handle your data.</p>
+
+    <h2>Data Collection</h2>
+    <p><strong>We do not collect, store, transmit, or share any personal data or browsing information.</strong></p>
+    <p>The Extension operates entirely on your device. It does not:</p>
+    <ul>
+      <li>Collect any personal information</li>
+      <li>Track your browsing activity</li>
+      <li>Send any data to external servers</li>
+      <li>Use analytics, cookies, or tracking technologies</li>
+      <li>Include any third-party SDKs that collect data</li>
+    </ul>
+
+    <h2>How the Extension Works</h2>
+    <p>The Extension uses three local mechanisms to block YouTube Shorts content:</p>
+    <ul>
+      <li><strong>CSS rules</strong> injected into YouTube pages to hide Shorts-related UI elements</li>
+      <li><strong>JavaScript</strong> that runs locally in the browser to redirect /shorts/ URLs and observe page changes</li>
+      <li><strong>Declarative net request rules</strong> processed by Safari to redirect Shorts URLs before the page loads</li>
+    </ul>
+    <p>All processing happens on your Mac. No data leaves your device.</p>
+
+    <h2>Local Storage</h2>
+    <p>The Extension stores a single boolean preference (enabled/disabled toggle state) using the browser's local storage API. This data stays on your device and is never transmitted anywhere.</p>
+
+    <h2>Permissions</h2>
+    <p>The Extension requests access to youtube.com to function. It does not request or require access to any other websites.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>The Extension does not integrate with any third-party services, APIs, or SDKs.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>The Extension does not collect data from anyone, including children under 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we update this privacy policy, we will post the revised version on this page with an updated date. Since we do not collect any data, changes are unlikely.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please contact us:</p>
+    <ul>
+      <li>GitHub: <a href="https://github.com/CristianProdius/antishorts-safari/issues">Open an issue</a></li>
+    </ul>
+
+    <footer>
+      <p>&copy; 2026 Prodius. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>

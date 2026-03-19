@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — YouTube Shorts Blocker</title>
+  <style>
+    :root { --bg: #0d0d0d; --surface: #1a1a1a; --border: #2a2a2a; --text: #e0e0e0; --muted: #999; --accent: #ff6659; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+    .container { max-width: 640px; margin: 0 auto; padding: 60px 24px 80px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { font-size: 15px; color: var(--muted); margin-bottom: 40px; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    p { font-size: 15px; color: var(--muted); margin-bottom: 16px; }
+    ol, ul { padding-left: 20px; margin-bottom: 16px; }
+    li { font-size: 15px; color: var(--muted); margin-bottom: 6px; }
+    .back { display: inline-block; margin-bottom: 32px; font-size: 14px; }
+    code { background: var(--surface); padding: 2px 6px; border-radius: 4px; font-size: 14px; color: var(--text); }
+    .faq { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; }
+    .faq h3 { font-size: 15px; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+    .faq p { margin-bottom: 0; }
+    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a class="back" href="index.html">&larr; Back to home</a>
+
+    <h1>Support</h1>
+    <p class="subtitle">Having trouble with YouTube Shorts Blocker? Find answers below or reach out to us.</p>
+
+    <h2>Getting Started</h2>
+    <ol>
+      <li>Install the app from the Mac App Store</li>
+      <li>Open <strong>Safari</strong> &rarr; <strong>Settings</strong> &rarr; <strong>Extensions</strong></li>
+      <li>Check the box next to <strong>"YouTube Shorts Blocker"</strong></li>
+      <li>Grant permission for <code>youtube.com</code> when prompted</li>
+      <li>Visit <a href="https://youtube.com">youtube.com</a> — Shorts will be hidden</li>
+    </ol>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+      <h3>The extension isn't blocking Shorts</h3>
+      <p>Make sure the extension is enabled in Safari &rarr; Settings &rarr; Extensions and that you've granted it permission for youtube.com. Try reloading the YouTube page. Also check the extension popup in the Safari toolbar — the toggle should show "Blocking Shorts".</p>
+    </div>
+
+    <div class="faq">
+      <h3>How do I temporarily disable blocking?</h3>
+      <p>Click the extension icon in the Safari toolbar and toggle the switch off. Reload the YouTube page to see Shorts again. Toggle it back on anytime.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Does this extension work on iPhone or iPad?</h3>
+      <p>Not currently. This is a macOS-only Safari extension. iOS support may be considered in a future version.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Does the extension collect my data?</h3>
+      <p>No. The extension runs entirely on your Mac and does not collect, store, or transmit any data. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Some Shorts still appear momentarily</h3>
+      <p>YouTube loads content dynamically. The extension uses multiple techniques to catch Shorts elements as they appear, but there may be a brief flash before they are hidden. This is normal and the elements will be removed within milliseconds.</p>
+    </div>
+
+    <div class="faq">
+      <h3>The extension stopped working after a YouTube update</h3>
+      <p>YouTube occasionally changes its page structure. If the extension stops working, please <a href="https://github.com/CristianProdius/antishorts-safari/issues">report the issue on GitHub</a> and we will release an update.</p>
+    </div>
+
+    <h2>Contact Us</h2>
+    <p>For bug reports, feature requests, or questions:</p>
+    <ul>
+      <li><strong>GitHub Issues:</strong> <a href="https://github.com/CristianProdius/antishorts-safari/issues">Open an issue</a> (preferred)</li>
+    </ul>
+
+    <footer>
+      <p>&copy; 2026 Prodius. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
