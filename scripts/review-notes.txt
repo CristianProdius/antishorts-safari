@@ -1,0 +1,11 @@
+How to test this Safari Web Extension:
+
+1. Build and run the app (it launches a helper window)
+2. Open Safari → Settings → Extensions
+3. Enable "AntiShorts"
+4. Grant permission for youtube.com when prompted
+5. Visit youtube.com — Shorts shelf and sidebar link should be hidden
+6. Try visiting youtube.com/shorts/dQw4w9WgXcQ — it should redirect to youtube.com/watch?v=dQw4w9WgXcQ
+7. Click the extension icon in the Safari toolbar to toggle blocking on/off
+
+No login or account required. The extension collects no data.

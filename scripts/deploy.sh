@@ -161,6 +161,11 @@ upload() {
     info "Builds typically process in 15-30 minutes."
 }
 
+set_review_notes() {
+    info "Setting App Review notes..."
+    python3 "$PROJECT_DIR/scripts/set-review-notes.py" || warn "Failed to set review notes (non-fatal). Set them manually in App Store Connect."
+}
+
 # -- Commands -----------------------------------------------------------------
 
 cmd_deploy() {
@@ -187,9 +192,12 @@ cmd_deploy() {
 
     upload "$package_path" "$version" "$build_number"
 
+    # Set review notes via App Store Connect API
+    set_review_notes
+
     echo ""
     echo -e "${GREEN}========================================${NC}"
-    echo -e "${GREEN} No YouTube Shorts v${version} (${build_number})${NC}"
+    echo -e "${GREEN} AntiShorts v${version} (${build_number})${NC}"
     echo -e "${GREEN} Successfully uploaded to App Store!${NC}"
     echo -e "${GREEN}========================================${NC}"
 }
