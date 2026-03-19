@@ -164,6 +164,38 @@ def main():
             })
             log("OK", "App info localization updated (subtitle, privacy URL)")
 
+    # ── 2b. Set copyright on the version ───────────────────────────────────
+    log("INFO", "Setting copyright...")
+    api("PATCH", f"/appStoreVersions/{version_id}", token, {
+        "data": {
+            "type": "appStoreVersions",
+            "id": version_id,
+            "attributes": {
+                "copyright": COPYRIGHT,
+            }
+        }
+    })
+    log("OK", f"Copyright set: {COPYRIGHT}")
+
+    # ── 2c. Set export compliance on latest build ───────────────────────────
+    log("INFO", "Setting export compliance...")
+    builds_resp = api("GET", f"/builds?filter[app]={APP_APPLE_ID}&sort=-uploadedDate&limit=1", token)
+    if builds_resp.get("data"):
+        build_id = builds_resp["data"][0]["id"]
+        try:
+            api("PATCH", f"/builds/{build_id}", token, {
+                "data": {
+                    "type": "builds",
+                    "id": build_id,
+                    "attributes": {
+                        "usesNonExemptEncryption": False,
+                    }
+                }
+            })
+            log("OK", "Export compliance set (no encryption)")
+        except Exception:
+            log("WARN", "Could not set export compliance (build may still be processing)")
+
     # ── 3. Update Version Localization (description, keywords, etc.) ────────
     log("INFO", "Updating version localization...")
     loc_resp = api("GET", f"/appStoreVersions/{version_id}/appStoreVersionLocalizations", token)
